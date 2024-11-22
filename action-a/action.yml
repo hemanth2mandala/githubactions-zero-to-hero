@@ -5,18 +5,6 @@ inputs:
         description: 'The name to greet'
         required: true
 runs:
-    using: "composite"
-    steps:
-    - name: checking location
-      run: |
-        pwd
-        ls
-      shell: bash
-
-    - name: Entry point Executable
-      run: ./action-a/entrypoint.sh ${{ inputs.MY_NAME }}
-      shell: bash
-
     using: "docker"
     image: "Dockerfile"
     args: 
