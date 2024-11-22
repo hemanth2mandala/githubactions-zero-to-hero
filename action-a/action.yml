@@ -16,4 +16,10 @@ runs:
     - name: Entry point Executable
       run: ./action-a/entrypoint.sh ${{ inputs.MY_NAME }}
       shell: bash
+
+    using: "docker"
+    image: "Dockerfile"
+    args: 
+      - ${{ inputs.MY_NAME }}
+
    
