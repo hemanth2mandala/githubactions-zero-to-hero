@@ -1,11 +1,9 @@
-name: "Bash Script Action"
-description: "An action to run a Bash script"
+name: 'Hello World Action'
+description: 'A simple hello world action'
 inputs:
     MY_NAME:
-        description: "The name to greet"
+        description: 'The name to greet'
         required: true
 runs:
-    using: "composite"
-    steps:
-      - run: ./entrypoint.sh ${{ inputs.MY_NAME }}
-        shell: bash
+    using: 'docker'
+    image: 'Dockerfile'

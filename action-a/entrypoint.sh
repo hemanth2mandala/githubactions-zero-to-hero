@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Accept the input parameter
-MY_NAME=$1
+set -e
 
-# Print a greeting message
-echo "Hello, $MY_NAME! Welcome to the Bash Script Action."
+echo "Hello, $MY_NAME!"
