@@ -9,7 +9,7 @@ runs:
     steps:
     - name: Entry point Executable 
       run: |
-      pwd
-      ls
+        pwd
+        ls
       shell: bash
    
