@@ -1,5 +1,3 @@
-#!/bin/bash
+#!/bin/sh -l
 
-MY_NAME=$0
-
-echo "Hello, $MY_NAME!"
+echo "Hello $1"
