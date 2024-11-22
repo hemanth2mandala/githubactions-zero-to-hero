@@ -7,9 +7,13 @@ inputs:
 runs:
     using: "composite"
     steps:
-    - name: Entry point Executable 
+    - name: checking location
       run: |
         pwd
         ls
+      shell: bash
+
+    - name: Entry point Executable
+      run: ./action-a/entrypoint.sh ${{ inputs.MY_NAME }}
       shell: bash
    
