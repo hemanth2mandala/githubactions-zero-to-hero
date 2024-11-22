@@ -1,9 +1,11 @@
-name: "Hello World Action"
-description: "A simple action that prints a message"
+name: "Bash Script Action"
+description: "An action to run a Bash script"
 inputs:
     MY_NAME:
         description: "The name to greet"
         required: true
 runs:
-    using: "node12"
-    main: "entrypoint.sh" # Or use "entrypoint.sh" for shell script actions
+    using: "composite"
+    steps:
+      - run: ./entrypoint.sh ${{ inputs.MY_NAME }}
+        shell: bash
