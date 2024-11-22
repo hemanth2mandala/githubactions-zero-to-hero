@@ -1,5 +1,5 @@
 #!/bin/bash
 
-set -e
+MY_NAME=$1
 
 echo "Hello, $MY_NAME!"
