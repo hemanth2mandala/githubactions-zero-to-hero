@@ -7,5 +7,5 @@ inputs:
 runs:
     using: "composite"
     steps:
-    - run: ./entrypoint.sh ${{ inputs.MY_NAME }}
+    - run: bash entrypoint.sh ${{ inputs.MY_NAME }}
       shell: bash
