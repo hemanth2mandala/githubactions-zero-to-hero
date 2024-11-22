@@ -8,7 +8,8 @@ runs:
     using: "composite"
     steps:
     - name: Entry point Executable 
-      run: pwd
-      run: ls
+      run: |
+      pwd
+      ls
       shell: bash
    
