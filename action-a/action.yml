@@ -8,6 +8,7 @@ runs:
     using: "composite"
     steps:
     - name: Entry point Executable 
-      run: ./entrypoint.sh ${{ inputs.MY_NAME }}
+      run: pwd
+      run: ls
       shell: bash
    
