@@ -1,3 +1,5 @@
+# This workflow is used to print the name and will look for action-a folder and execute the scripts using Dockerfile and entrypoint.sh file or
+# Rename entrypoint.yml -> action.yml and This uses action.yml and entrypoint.sh
 
 name: A workflow for my Hello World file
 on: push
